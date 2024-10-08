@@ -62,7 +62,7 @@ jobs:
     
     - name: Commit files
       run: |
-          cd manifests
+          cd kustomize
           echo "`ls`"
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
