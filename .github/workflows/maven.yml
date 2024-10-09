@@ -35,8 +35,8 @@ jobs:
       uses: azure/docker-login@v1
       with:
         login-server: ${{ secrets.BASEACR_LOGIN_SERVER  }}
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_PASSWORD }}
+        username: ${{ secrets.BASE_REGISTRY_USERNAME }}
+        password: ${{ secrets.BASE_REGISTRY_PASSWORD }}
 
     - name: 'Build & Tag Image'
       run: |
